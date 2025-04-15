@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show/Hide Password</title>
+</head>
+<body>
+  <input type="password" id="passwordField" placeholder="Enter Password">
+  <button onclick="togglePassword()" id="toggleBtn">Show</button>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("passwordField");
+      const toggleButton = document.getElementById("toggleBtn");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleButton.textContent = "Hide";
+      } else {
+        passwordInput.type = "password";
+        toggleButton.textContent = "Show";
+      }
+    }
+  </script>
+</body>
+</html>
