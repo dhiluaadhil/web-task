@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form - StyleNest</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="products.html">Products</a> |
+        <a href="order.html">Order Form</a> |
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <h2>Place Your Order</h2>
+    <form action="#" method="post">
+        <label>Customer Name:</label><br>
+        <input type="text" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Product Name:</label><br>
+        <input type="text" name="product"><br><br>
+
+        <label>Quantity:</label><br>
+        <input type="number" name="quantity" min="1"><br><br>
+
+        <label>Payment Method:</label><br>
+        <select name="payment">
+            <option value="card">Card</option>
+            <option value="cod">Cash on Delivery</option>
+        </select><br><br>
+
+        <input type="checkbox" name="policy"> I agree to the store policies<br><br>
+
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>
